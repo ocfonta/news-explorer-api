@@ -9,7 +9,7 @@ const { errors } = require('celebrate');
 const routers = require('./routes');
 
 const auth = require('./middlewares/auth');
-const { signIn, signUp } = require('./routes/auth');
+const { signIn, signUp, logOut } = require('./routes/auth');
 const { errorHandle } = require('./middlewares/errorHandle');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
@@ -40,6 +40,7 @@ app.use(requestLogger);
 
 app.use('/', signUp);
 app.use('/', signIn);
+app.use('/', logOut);
 app.use('/', auth, routers);
 
 app.use(errorLogger);
