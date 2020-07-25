@@ -14,7 +14,7 @@ const { errorHandle } = require('./middlewares/errorHandle');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const corsOptions = {
-  origin: ['http://mestopraktikum.xyz', 'https://mestopraktikum.xyz', 'http://localhost:8080'],
+  origin: ['http://mestopraktikum.xyz', 'http://localhost:8080'],
   methods: 'GET, POST, PUT, DELETE, PATCH, HEAD',
   preflightContinue: false,
   optionsSuccessStatus: 204,
