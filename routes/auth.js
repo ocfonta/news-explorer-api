@@ -31,4 +31,4 @@ logOut.post('/logout', (req, res) => {
   });
 });
 
-module.exports = { signIn, signUp };
+module.exports = { signIn, signUp, logOut };
