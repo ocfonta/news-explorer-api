@@ -10,6 +10,7 @@ articlesRoute.post('/', celebrate({
     keyword: Joi.string().required().error(new Error('Ключевое слово не передано')),
     title: Joi.string().required().error(new Error('Заголовок не передан')),
     text: Joi.string().required().error(new Error('Пустая статья')),
+    date: Joi.string().required(),
     source: Joi.string().required().error(new Error('Обязательное поле: source')),
     link: Joi.string().custom(urlValidator, 'urlValidator').required(),
     image: Joi.string().custom(urlValidator, 'urlValidator').required(),
