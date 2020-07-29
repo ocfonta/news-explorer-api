@@ -19,7 +19,7 @@ const corsOptions = {
 };
 
 const app = express();
-app.use('*', cors(corsOptions));
+app.use('/api', cors(corsOptions));
 app.use(cookieParser());
 
 mongoose.connect('mongodb://localhost:27017/yapidb', {
