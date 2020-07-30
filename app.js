@@ -14,7 +14,7 @@ const { errorHandle } = require('./middlewares/errorHandle');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const corsOptions = {
-  origin: ['http://mestopraktikum.xyz', 'http://localhost:8080', 'https://ocfonta.github.io/news-explorer-frontend', 'https://ocfonta.github.io'],
+  origin: ['https://mestopraktikum.xyz', 'http://localhost:8080', 'https://ocfonta.github.io/news-explorer-frontend', 'https://ocfonta.github.io'],
   credentials: true,
 };
 
