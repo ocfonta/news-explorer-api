@@ -54,9 +54,8 @@ const login = (req, res, next) => {
       res.cookie('jwt', token, {
         maxAge: 3600000 * 24 * 7,
         httpOnly: true,
-        sameSite: true,
         isSecure: false,
-        isSameSite: 'None',
+        SameSite: 'None',
         domain: 'mestopraktikum.xyz',
       });
       res.status(200).send({ token });
