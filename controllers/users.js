@@ -56,7 +56,7 @@ const login = (req, res, next) => {
         httpOnly: true,
         sameSite: true,
         isSecure: false,
-        isSameSite: 'Lax',
+        isSameSite: 'None',
         domain: 'mestopraktikum.xyz',
       });
       res.status(200).send({ token });
